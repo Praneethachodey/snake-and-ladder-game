@@ -13,6 +13,7 @@ int noOfDice=0;
   {
    dice =(int)Math.floor(Math.random()*6)+1;
    noOfDice++;
+   System.out.println("number on dice: " +dice);
    return dice;
   } 
 
@@ -28,15 +29,19 @@ int noOfDice=0;
       System.out.println("ladder");
       if(position_of_player+dice<=100)
       position_of_player+= dice;
+      if(position_of_player==100) break;
+      System.out.println("position of player:" +position_of_player);
+      System.out.println("ladder so playing again");
+      rollDice();
+      chooseOption();
       break;
   
      case 2:
       System.out.println("snake");
       position_of_player-= dice;
-      if(position_of_player<0) position_of_player=0;
+      if(position_of_player<0) position_of_player=0;      
       break;}
     
-      System.out.println("position of player : " + position_of_player);
    }
       
 }
