@@ -24,6 +24,7 @@ public class player{
     
      case 1:
       System.out.println("ladder");
+      if(position_of_player+dice<=100)
       position_of_player+= dice;
       break;
   
