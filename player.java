@@ -30,7 +30,10 @@ public class player{
      case 2:
       System.out.println("snake");
       position_of_player-= dice;
+      if(position_of_player<0) position_of_player=0;
       break;}
+    
+      System.out.println("position of player : " + position_of_player);
    }
       
 }
