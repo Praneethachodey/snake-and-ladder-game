@@ -2,6 +2,7 @@ public class player{
  int position_of_player;
  int dice=0;
  int option=0;
+int noOfDice=0;
  public player()
   {
    position_of_player=0;
@@ -11,6 +12,7 @@ public class player{
  int rollDice()
   {
    dice =(int)Math.floor(Math.random()*6)+1;
+   noOfDice++;
    return dice;
   } 
 

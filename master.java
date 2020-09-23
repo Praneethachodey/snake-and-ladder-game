@@ -10,5 +10,6 @@ dice = p1.rollDice();
 System.out.println("number on dice : " + dice);
 p1.chooseOption();
 }
+System.out.println("number of times the dice was rolled :" +p1.noOfDice);
 }
 }
